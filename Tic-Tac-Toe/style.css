@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	padding: 0.5em 2em;
+	text-align: center;
+	background-color: rgb(18, 18, 59);
+}
+
+h1 {
+	font-size: 3em;
+	color: rgb(85, 77, 31);
+}
+
+h2 {
+	font-size: 2.25em;
+	color: rgb(85, 77, 31);
+}
+
+#button-play-again {
+	margin: 0 auto;
+}
+
+#container {
+	margin: 2em auto;
+	width: 100%;
+}
+
+#game-board {
+	display: grid;
+	grid-template-columns: repeat(3, 150px);
+	margin: 0 auto;
+	width: 450px
+}
+
+#play-again {
+	margin: 0 auto;
+}
+
+#square-0, #square-1, #square-3, #square-4 {
+	border-width: 0 2px 2px 0;
+}
+
+#square-2, #square-5 {
+	border-width: 0 0 2px 0;
+}
+
+#square-6, #square-7 {
+	border-width: 0 2px 0 0;
+}
+
+#square-8 {
+	border-width: 0;
+}
+
+#turn {}
+
+.game-square {
+	border-color: rgb(105, 27, 27);
+	border-style: solid;
+	display: inline;
+	font-size: 6em;
+	line-height: 120px;
+	padding: 20px 40px;
+	height: 150px;
+	width: 150px;
+}
+
+.game-square:hover {
+	background-color: aquamarine;
+	cursor: pointer;
+}
+
+#button-play-again {
+	padding: 10px 20px;
+	background-color: brown;
+	color: hotpink;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.25em;
+	cursor: pointer;
+}
+
+#button-play-again:hover {
+	background-color: blueviolet;
+}
+
+.game-square-focus {
+	outline: 3px solid;
+	outline-offset: 2px;
+}
+
+#button-play-again:focus {
+	outline: 3px solid;
+	outline-offset: 2px;
+}
+
+#turn {
+	font-size: 1.5;
+	margin: 1em 0;
+}
